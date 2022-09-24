@@ -1,0 +1,24 @@
+// utils styles
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+@import './base/card-set';
+
+// layout styles
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/footer';
+
+// components styles
+@import './components/logo';
+@import './components/btn';
+@import './components/portfolio-filters';
+@import './components/portfolio-card';
+@import './components/adress';
+@import './components/socials';
+@import './components/subscription';

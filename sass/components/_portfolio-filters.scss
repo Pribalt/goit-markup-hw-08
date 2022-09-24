@@ -1,0 +1,41 @@
+.portfolio {
+  @include section(94px 0);
+}
+
+.filters {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+
+  &__item {
+    background-color: var(--card-background-color);
+  }
+
+  &__btn {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--btn-text-black-colol);
+    background-color: var(--btn-background-color);
+    transition: color var(--timing-function), background-color var(--timing-function),
+      box-shadow var(--timing-function);
+
+    &--active {
+      color: var(--btn-text-white-colol);
+      background-color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--btn-text-white-colol);
+      background-color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

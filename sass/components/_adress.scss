@@ -1,0 +1,26 @@
+.adress__list {
+  width: 231px;
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress__link {
+  display: block;
+  font-style: normal;
+  line-height: calc(24 / 14);
+  color: var(--title-text-colol);
+  transition: color var(--timing-function);
+
+  &--color {
+    color: var(--contacts-text);
+  }
+
+  &:hover,
+  &:focus,
+  &--color:hover,
+  &--color:focus {
+    color: var(--accent-color);
+  }
+}

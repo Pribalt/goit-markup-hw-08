@@ -1,0 +1,52 @@
+:root {
+  /**
+    |============================
+    | Text color
+    |============================
+  */
+
+  --title-text-colol: #ffffff;
+  --main-text-colol: #212121;
+  --secondary-text-colol: #757575;
+  --contacts-text: #ffffff99;
+  --btn-text-white-colol: #ffffff;
+  --btn-text-black-colol: #212121;
+  --text-dark-logo: #000000;
+  --text-light-logo: #ffffff;
+  --socials-text-color: #afb1b8;
+  --socials-text-white-color: #ffffff;
+  --about-text-color: #ffffff;
+  --overlay-text-color: #ffffff;
+  --form-secondary-text-color: #75757580;
+
+  /**
+    |============================
+    | Background-color
+    |============================
+  */
+
+  --hero-background-color: #c4c4c4;
+  --team-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --btn-background-color: #f5f4fa;
+  --card-background-color: #ffffff;
+  --socials-background-color: #ffffff;
+  --socials-background-color: rgba(255, 255, 255, 0.102);
+  --icon-background-color: #f5f4fa;
+  --modal-background-color: #ffffff;
+  --backdrop-background-color: #00000033;
+  --checkbox-background-color: #212121;
+
+  /**
+    |============================
+    | Others
+    |============================
+  */
+
+  --accent-color: #2196f3;
+  --main-font: Roboto, sans-serif;
+  --logo-font: Raleway, sans-serif;
+  --items: 3;
+  --indent: 30px;
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
