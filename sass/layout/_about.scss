@@ -1,4 +1,10 @@
 .about {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   @include section(0 0 94px);
 
   &__title {
