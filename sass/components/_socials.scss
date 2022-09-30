@@ -1,9 +1,13 @@
 .socials {
+  @include list;
+
   display: flex;
   gap: 10px;
   justify-content: center;
 
   &__link {
+    @include link;
+
     display: flex;
     align-items: center;
     justify-content: center;
