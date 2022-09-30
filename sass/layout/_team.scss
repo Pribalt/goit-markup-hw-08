@@ -1,31 +1,68 @@
 .team {
-  @include section(94px 0);
+  @include section(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section;
+  }
 
   background-color: var(--team-background-color);
 
   &__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: calc(42 / 36);
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: calc(33 / 28);
     text-align: center;
     color: var(--main-text-colol);
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include list;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
 
   &__item {
     background-color: var(--card-background-color);
-    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767.5px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
+  }
+
+  &__img {
+    @include img;
   }
 
   &__wrap {
-    padding: 30px 0;
+    padding: 30px 0 24px;
+
+    @media screen and (min-width: 1200px) {
+      padding: 30px 0;
+    }
   }
 
   &__name {
