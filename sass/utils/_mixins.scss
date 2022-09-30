@@ -1,3 +1,21 @@
-@mixin section($padding...) {
-  padding: $padding;
+@mixin section($pt: 94px, $pb: 94px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin list($ls: none, $p: 0, $m: 0) {
+  list-style: $ls;
+  padding: $p;
+  margin: $m;
+}
+
+@mixin link($td: none, $ci: inherit) {
+  text-decoration: $td;
+  color: $ci;
+}
+
+@mixin img($db: block, $mw: 100%, $h: auto) {
+  display: $db;
+  max-width: $mw;
+  height: $h;
 }
