@@ -1,12 +1,18 @@
 .adress__list {
-  width: 231px;
+  @include list;
 }
 
 .adress__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress__link {
+  @include link;
+
   display: block;
   font-style: normal;
   line-height: calc(24 / 14);
