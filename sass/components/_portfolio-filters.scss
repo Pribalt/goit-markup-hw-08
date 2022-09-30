@@ -1,12 +1,33 @@
 .portfolio {
-  @include section(94px 0);
+  @include section(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section;
+  }
 }
 
 .filters {
+  @include list;
+
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 8px;
+
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 40px;
+    max-width: 326px;
+    row-gap: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   &__item {
     background-color: var(--card-background-color);

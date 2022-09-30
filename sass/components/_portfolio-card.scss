@@ -9,6 +9,17 @@
   }
 }
 
+.card__item {
+  display: flex;
+}
+
+.card__link {
+  @include link;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .card__overlay {
   position: relative;
   overflow: hidden;
@@ -40,7 +51,12 @@
   color: var(--overlay-text-color);
 }
 
+.card__img {
+  @include img;
+}
+
 .card__wrap {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
