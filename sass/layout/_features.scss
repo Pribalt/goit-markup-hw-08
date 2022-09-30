@@ -1,12 +1,14 @@
 .features {
-  @include section(60px 0);
+  @include section(60px, 60px);
 
   @media screen and (min-width: 1200px) {
-    @include section(94px 0);
+    @include section;
   }
 }
 
 .features__list {
+  @include list;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -22,11 +24,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 30px * (2 - 1)) / 2);
+    flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px * (4 - 1)) / 4);
+    flex-basis: calc((100% - 30px * (4 - 1)) / 4);
   }
 }
 
