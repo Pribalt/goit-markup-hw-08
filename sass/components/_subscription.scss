@@ -1,15 +1,18 @@
 .subscription {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   &__label {
-    display: flex;
-    margin-right: 12px;
-    width: 100%;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      width: 100%;
+      margin-right: 12px;
+    }
   }
 
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
@@ -22,6 +25,18 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 
     &::placeholder {
       font-size: 16px;
