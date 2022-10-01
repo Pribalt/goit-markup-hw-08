@@ -4,58 +4,58 @@
   @media screen and (min-width: 1200px) {
     @include section;
   }
-}
 
-.features__list {
-  @include list;
+  &__list {
+    @include list;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-
-.features__item {
-  &:not(:last-child) {
-    @media screen and (max-width: 767.5px) {
-      margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+  &__item {
+    &:not(:last-child) {
+      @media screen and (max-width: 767.5px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      @include grid(2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include grid(4);
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 30px * (4 - 1)) / 4);
-  }
-}
-
-.features__wrap {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background-color: var(--icon-background-color);
-  border-radius: 4px;
-}
-
-.features__subtitle {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  text-transform: uppercase;
-  color: var(--main-text-colol);
-
-  @media screen and (max-width: 767.5px) {
+  &__wrap {
     display: flex;
+    margin-bottom: 30px;
     justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--icon-background-color);
+    border-radius: 4px;
   }
-}
 
-.features__text {
-  line-height: calc(24 / 14);
-  color: var(--secondary-text-colol);
+  &__subtitle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--main-text-colol);
+
+    @media screen and (max-width: 767.5px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-colol);
+  }
 }
