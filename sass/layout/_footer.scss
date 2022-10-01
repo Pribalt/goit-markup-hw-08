@@ -34,7 +34,6 @@
   }
 
   &__subscription {
-    // display: inline-block;
     margin-bottom: 20px;
     font-weight: 700;
     line-height: calc(16 / 14);
@@ -48,7 +47,6 @@
 
   &__wrap {
     @media screen and (min-width: 1200px) {
-      // max-width: 450px;
       margin-left: auto;
     }
   }
