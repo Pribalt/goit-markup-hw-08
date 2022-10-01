@@ -20,7 +20,7 @@
   transition: color var(--timing-function);
 
   &--color {
-    color: var(--contacts-text);
+    color: var(--contacts-text-color);
   }
 
   &:hover,

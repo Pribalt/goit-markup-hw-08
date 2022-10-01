@@ -17,18 +17,18 @@
     transition: color var(--timing-function), background-color var(--timing-function);
 
     &--color-light {
-      color: var(--socials-text-color);
+      color: var(--socials-text-dark-color);
     }
 
     &--color-light:hover,
     &--color-light:focus {
-      color: var(--btn-text-white-colol);
+      color: var(--socials-text-light-color);
       background-color: var(--accent-color);
     }
 
     &--color-white {
-      color: var(--socials-text-white-color);
-      background-color: var(--socials-background-color);
+      color: var(--socials-text-light-color);
+      background-color: var(--socials-background-dark-color);
     }
 
     &--color-white:hover,

@@ -8,13 +8,13 @@
   --title-text-colol: #ffffff;
   --main-text-colol: #212121;
   --secondary-text-colol: #757575;
-  --contacts-text: #ffffff99;
-  --btn-text-white-colol: #ffffff;
-  --btn-text-black-colol: #212121;
-  --text-dark-logo: #000000;
-  --text-light-logo: #ffffff;
-  --socials-text-color: #afb1b8;
-  --socials-text-white-color: #ffffff;
+  --contacts-text-color: #ffffff99;
+  --logo-text-light-color: #ffffff;
+  --logo-text-dark-color: #000000;
+  --btn-text-light-colol: #ffffff;
+  --btn-text-dark-colol: #212121;
+  --socials-text-light-color: #ffffff;
+  --socials-text-dark-color: #afb1b8;
   --about-text-color: #ffffff;
   --overlay-text-color: #ffffff;
   --form-secondary-text-color: #75757580;
@@ -26,16 +26,18 @@
   */
 
   --hero-background-color: #c4c4c4;
+  --about-background-color: rgba(47, 48, 58, 0.8);
   --team-background-color: #f5f4fa;
+  --socials-background-light-color: #ffffff;
+  --socials-background-dark-color: rgba(255, 255, 255, 0.102);
+  --icon-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --btn-background-color: #f5f4fa;
   --card-background-color: #ffffff;
-  --socials-background-color: #ffffff;
-  --socials-background-color: rgba(255, 255, 255, 0.102);
-  --icon-background-color: #f5f4fa;
   --modal-background-color: #ffffff;
   --backdrop-background-color: #00000033;
   --checkbox-background-color: #212121;
+  --overlay-background-color: rgba(33, 150, 243, 0.9);
 
   /**
     |============================
