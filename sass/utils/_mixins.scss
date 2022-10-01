@@ -19,3 +19,7 @@
   max-width: $mw;
   height: $h;
 }
+
+@mixin grid($items, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
