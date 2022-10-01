@@ -44,12 +44,11 @@
     }
 
     @media screen and (min-width: 768px) {
-      --items: 2;
-      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+      @include grid(2);
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 270px;
+      @include grid(4);
     }
   }
 
