@@ -37,7 +37,7 @@
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform var(--timing-function);
-  background-color: var(--overlay-background-color)
+  background-color: var(--overlay-background-color);
 
   .card__link:hover &,
   .card__link:focus & {
