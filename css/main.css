@@ -1358,8 +1358,8 @@ p {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  font-size: 26px;
-  line-height: 1.0769230769;
+  font-size: 27px;
+  line-height: 1.1481481481;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--timing-function);
   transition: color var(--timing-function);
