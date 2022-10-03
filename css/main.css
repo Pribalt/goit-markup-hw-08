@@ -1394,10 +1394,20 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 479.5px) {
   .mobile-socials {
     display: block;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
+  .mobile-socials {
+    max-width: 360px;
+    min-height: 26px;
+    overflow: hidden;
   }
 }
 .mobile-socials__link {
@@ -1431,14 +1441,11 @@ p {
   .mobile-socials__link::after {
     content: "";
     position: absolute;
-    width: 22px;
+    display: block;
     bottom: 0;
-    right: 0;
-    outline: 1px solid rgba(33, 33, 33, 0.2);
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    -webkit-transform-origin: bottom right;
-            transform-origin: bottom right;
-    margin-right: -10px;
+    right: -10px;
+    background-color: rgba(33, 33, 33, 0.2);
+    width: 1px;
+    height: 22px;
   }
 }/*# sourceMappingURL=main.css.map */
