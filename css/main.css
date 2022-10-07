@@ -1223,7 +1223,7 @@ p {
   margin-right: 10px;
 }
 
-.menu__btn {
+.menu-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1242,7 +1242,7 @@ p {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .menu__btn {
+  .menu-btn {
     display: none;
   }
 }
